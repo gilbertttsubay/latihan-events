@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     on: workflow_dispatch
     steps:
-      name: Test
+     - name: Test
       run: npm test
