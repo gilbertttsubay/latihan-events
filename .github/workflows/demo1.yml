@@ -3,7 +3,7 @@ on: push
 jobs:
   demo:
     runs-on: ubuntu-latest
-    on: workflow_dispatch
+    needs: workflow_dispatch
     steps:
     - name: Test
       run: npm test
