@@ -1,0 +1,9 @@
+name: Demo Event
+on: push
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    on: workflow_dispatch
+    steps:
+      name: Test
+      run: npm test
