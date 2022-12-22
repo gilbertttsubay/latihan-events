@@ -5,6 +5,9 @@ on:
       - opened
       - edited
       - reopened
+  push:
+    branches:
+     - 'daily/**'
 jobs:
   demo:
     runs-on: ubuntu-latest
