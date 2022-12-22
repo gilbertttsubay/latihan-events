@@ -11,8 +11,3 @@ jobs:
     steps:
     - name: Test
       run: npm test
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Build Dependencies
-        run: npm ci
