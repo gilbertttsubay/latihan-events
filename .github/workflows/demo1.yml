@@ -1,13 +1,16 @@
 name: Demo Event
-on: push
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - reopened
+  push:
+    branches:
+     - 'daily/**'
 jobs:
   demo:
     runs-on: ubuntu-latest
     steps:
     - name: Test
       run: npm test
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Build Dependencies
-        run: npm ci
